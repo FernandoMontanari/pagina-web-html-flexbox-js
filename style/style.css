@@ -185,8 +185,9 @@ footer {
                 inset 0 8px 8px rgba(255, 255, 255, 0.1),
                 inset 0 -4px 4px rgba(255, 255, 255, 0.1);
 }
+
 .change_theme__toggle.active {
-    background-color: #222;
+    background-color: #444;
     box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
                 inset 0 8px 8px rgba(0, 0, 0, 0.1),
                 inset 0 -4px 4px rgba(0, 0, 0, 0.1);
@@ -215,7 +216,7 @@ footer {
 }
 
 .change_theme__toggle__indicator.active {
-    background: linear-gradient(to bottom, #444, #222);
+    background: linear-gradient(to bottom, #ececec, #c9c9c9);
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
                 inset 0 4px 4px rgba(255, 255, 255, 0.2),
                 inset 0 -4px 4px rgba(255, 255, 255, 0.2);

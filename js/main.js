@@ -38,8 +38,10 @@ function onLoad() {
 setTimeout(onLoad, 500);
 
 const toggle = document.getElementById('toggle');
+const indicator = document.getElementById('indicator');
 toggle.onclick = () => {
     toggle.classList.toggle('active')
+    indicator.classList.toggle('active')
     body.classList.toggle('active')
     foto.classList.toggle('active')
     txtBg.classList.toggle('active')
