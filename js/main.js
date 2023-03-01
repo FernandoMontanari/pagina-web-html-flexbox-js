@@ -6,11 +6,13 @@ const areaDeAtuacao = document.getElementById('area-de-atuacao');
 const icon = document.getElementById('icon');
 const textoSobre = document.getElementById('texto-sobre');
 const apresentacaoLinks = document.getElementById('apresentacao-links');
+const tituloRedes = document.getElementById('titulo-redes');
+const portfolio = document.getElementById('portfolio');
 const linkedin = document.getElementById('linkedin');
 const github = document.getElementById('github');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
-const footer = document.querySelector('footer');
+const changeTheme = document.getElementById('change_theme');
 
 function onLoad() {
     setTimeout(() =>  foto.style.opacity = '1' , 500);
@@ -26,12 +28,10 @@ function onLoad() {
     }, 2500);
     setTimeout(() =>  textoSobre.style.opacity = '1' , 3000);
     setTimeout(() => {
-        linkedin.style.opacity = '1'
-        linkedin.style.top = '0'
-        github.style.opacity = '1'
-        github.style.top = '0'
+        apresentacaoLinks.style.top = '0'
+        apresentacaoLinks.style.opacity = '1'        
     }, 3500);
-    setTimeout(() =>  footer.style.opacity = '1' , 4000);
+    setTimeout(() =>  changeTheme.style.opacity = '1' , 4000);
 }
 
 
@@ -48,6 +48,8 @@ toggle.onclick = () => {
     areaDeAtuacao.classList.toggle('active')
     icon.classList.toggle('active')
     apresentacaoLinks.classList.toggle('active')
+    tituloRedes.classList.toggle('active')
+    portfolio.classList.toggle('active')
     linkedin.classList.toggle('active')
     github.classList.toggle('active')
     sun.classList.toggle('active')

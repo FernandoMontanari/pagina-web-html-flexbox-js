@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
+html {
+    
+}
+
 body {
     background-color: #000000;
     background-image: url(../images/bg-image.png);
@@ -36,19 +40,19 @@ main {
     align-items: center;
 }
 
-.foto, .apresentacao, .apresentacao__dados__nome, .apresentacao__dados__atuacao_area, .apresentacao__dados__atuacao_icon, .apresentacao__dados__texto_sobre, .apresentacao__links__linkedin, .apresentacao__links__github {
+.foto_container__foto, .apresentacao, .apresentacao__dados__nome, .apresentacao__dados__atuacao_area, .apresentacao__dados__atuacao_icon, .apresentacao__dados__texto_sobre,.apresentacao__links {
     opacity: 0;
     transition: 0.5s;
 }
 
-.foto {
+.foto_container__foto {
     z-index: 1;
     position: relative;
     border:1px solid transparent;
     border-radius: 15px;
 }
 
-.foto.active {
+.foto_container__foto.active {
     border:1px solid #000;
 }
 
@@ -62,8 +66,8 @@ main {
     border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
-    gap:70px;
-    padding: 10em 3em;
+    gap: 50px;
+    padding: 5em 3em;
     margin-left: -451px;
 }
 
@@ -118,7 +122,21 @@ main {
 
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+    top: 50px;
+    opacity: 0;
+}
+
+.apresentacao__links__titulo_redes {
+    font-size: 1.3em;
+}
+
+.apresentacao__links__titulo_redes.active {
+    color: #000;
 }
 
 .apresentacao__links a {
@@ -130,7 +148,8 @@ main {
     text-decoration: none;
     font-size: 1.3rem;
     border: 1px solid transparent;
-    transition: 0.2s; 
+    transition: 0.2s;
+    width: 60%;
 }
 
 .apresentacao__links__portfolio {
@@ -138,18 +157,19 @@ main {
     color: #000000;
 }
 
+.apresentacao__links__portfolio.active {
+    background-color: #211F1F;
+    color: #FFFFFF;
+}
+
 .apresentacao__links__linkedin {
     background-color: #0077B5;
     color: #FFF;
-    top: 50px;
-    position: relative;
 }
 
 .apresentacao__links__github {
     background-color: #FFFFFF;
     color: #211F1F;
-    top: 50px;
-    position: relative;
 }
 
 .apresentacao__links__github.active {
@@ -168,11 +188,7 @@ main {
 }
 
 footer {
-    opacity: 0;
-    transition: 0.2s;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    
 }
 
 .change_theme__toggle {
@@ -197,6 +213,11 @@ footer {
 }
 
 .change_theme {
+    opacity: 0;
+    transition: 0.2s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -240,15 +261,21 @@ footer {
 
 @media only screen and (max-width: 949px) {
 
+    .foto_container {
+        overflow: hidden;
+        height: 340px;
+        text-align: center;
+    }
+
     body {
-        justify-content: flex-start;
+        justify-content: center;
     }
 
     .container {
         flex-direction: column;
     }
 
-    .foto {
+    .foto_container__foto {
         width: 80%;
     }
 
@@ -287,7 +314,11 @@ footer {
         gap: 20px;
     }
 
-    footer {
+    .apresentacao__links a {
+        width: 100%;
+    }
+
+    .change_theme {
         padding-bottom:40px;
         position: relative;
         top: 0;

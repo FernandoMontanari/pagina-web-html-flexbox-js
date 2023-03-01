@@ -11,7 +11,9 @@
 </head>
 <body>
     <main class="container">
-            <img class="foto" src="images/fernando-montanari.png" alt="Foto Fernando Montanari" id="foto">
+            <div class="foto_container">
+                <img class="foto_container__foto" src="images/fernando-montanari.png" alt="Foto Fernando Montanari" id="foto">
+            </div>
             <section class="apresentacao" id="txt-bg">
                 <div class="apresentacao__dados">
                     <div>
@@ -26,20 +28,21 @@
                     </div>
                 </div>
                 <div class="apresentacao__links" id="apresentacao-links">
-                    <!-- <a href="#" target="_blank" class="apresentacao__links__portfolio">Portfolio</a> -->
+                    <h2 class="apresentacao__links__titulo_redes" id="titulo-redes">Acesse minhas redes:</h2>
+                    <!-- <a href="#" target="_blank" class="apresentacao__links__portfolio" id="portfolio">Portfolio</a> -->
                     <a href="https://www.linkedin.com/in/fernandomontanari-/" target="_blank" class="apresentacao__links__linkedin" id="linkedin">LinkedIn</a>
                     <a href="https://github.com/FernandoMontanari" target="_blank" class="apresentacao__links__github" id="github">GitHub</a>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="change_theme">
+            <div class="change_theme" id="change_theme">
                 <span class="moon" id="moon"><i class="fa-solid fa-moon"></i></span>
                 <div class="change_theme__toggle" id="toggle">
                     <i class="change_theme__toggle__indicator" id="indicator"></i>
                 </div>
                 <span class="sun" id="sun"><i class="fa-solid fa-sun"></i></span>
             </div>
+        <footer>   
         </footer>
     <script src="js/main.js"></script>
 </body>
