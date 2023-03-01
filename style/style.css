@@ -170,6 +170,9 @@ main {
 footer {
     opacity: 0;
     transition: 0.2s;
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 
 .change_theme__toggle {
@@ -286,6 +289,9 @@ footer {
 
     footer {
         padding-bottom:40px;
+        position: relative;
+        top: 0;
+        right: 0;
     }
 
   }
