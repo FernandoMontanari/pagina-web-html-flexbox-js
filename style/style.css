@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap');
 
-html {
-    
-}
-
 body {
     background-color: #000000;
     background-image: url(../images/bg-image.png);
@@ -13,7 +9,7 @@ body {
     background-position: center;
     color: #FFFFFF;
     font-family: 'Inconsolata', monospace;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -29,20 +25,70 @@ body.active {
     background-image: url(../images/bg-image-white.png);
 }
 
-main {
-    max-width: 953px;
-    /* max-height: 602px; */
+.cabecalho {
+    background-color: #0077B5;
     width: 100%;
+    padding: 10px 0;
+}
+
+.cabecalho.active {
+    background-color: #e3e3e3;
+}
+
+.organiza_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 953px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/* .cabecalho__menu {
+    margin: 0 auto;
+} */
+
+.cabecalho__menu ul{
+    display: flex;
+    gap: 20px;
+}
+
+.cabecalho__menu__link {
+    padding: 5px 0;
+    transition: 0.2s;
+    border-bottom: 1px solid transparent;
+}
+
+.cabecalho__menu__link a{
+    text-decoration: none;
+    transition: 0.2s;
+    color: #FFF;
+}
+
+.cabecalho.active .cabecalho__menu__link a {
+    color: #000;
+}
+
+.cabecalho__menu__link:hover {
+    border-bottom: 1px solid #FFF;
+}
+
+.cabecalho.active .cabecalho__menu__link:hover {
+    border-bottom: 1px solid #000;
 }
 
 .container {
     display: flex;
     align-items: center;
+    max-width: 953px;
+    /* max-height: 602px; */
+    width: 100%;
+    padding: 5% 0;
 }
 
 .foto_container__foto, .apresentacao, .apresentacao__dados__nome, .apresentacao__dados__atuacao_area, .apresentacao__dados__atuacao_icon, .apresentacao__dados__texto_sobre,.apresentacao__links {
     opacity: 0;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .foto_container__foto {
@@ -74,7 +120,7 @@ main {
 .apresentacao.active {
     background-color: #FFF;
     background-image: url(../images/txt-bg-image-white.png);
-    border-color: #035682;
+    /* border-color: #035682; */
 }
 
 .apresentacao__dados {
@@ -101,7 +147,7 @@ main {
 }
 
 .apresentacao__dados__atuacao_area.active {
-    color: #0062C3;
+    color: #5fc7fd;
 }
 
 .apresentacao__dados__atuacao_icon {
@@ -155,6 +201,7 @@ main {
 .apresentacao__links__portfolio {
     background-color: #FFFFFF;
     color: #000000;
+    display: none;
 }
 
 .apresentacao__links__portfolio.active {
@@ -187,10 +234,6 @@ main {
     color:#000 !important;
 }
 
-footer {
-    
-}
-
 .change_theme__toggle {
     position: relative;
     display: block;
@@ -213,14 +256,12 @@ footer {
 }
 
 .change_theme {
-    opacity: 0;
     transition: 0.2s;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+    /* position: absolute; */
+    /* top: 12px; */
+    /* right: 20px; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 0 10px;
 }
 
@@ -256,6 +297,17 @@ footer {
 
 .moon.active, .sun.active {
     color: #000;
+}
+
+.rodape {
+    background-color: #0077B5;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rodape.active {
+    background-color: #e3e3e3;
 }
 
 
@@ -319,7 +371,7 @@ footer {
     }
 
     .change_theme {
-        padding-bottom:40px;
+        padding: 10px 0;
         position: relative;
         top: 0;
         right: 0;

@@ -10,31 +10,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <main class="container">
-            <div class="foto_container">
-                <img class="foto_container__foto" src="images/fernando-montanari.png" alt="Foto Fernando Montanari" id="foto">
-            </div>
-            <section class="apresentacao" id="txt-bg">
-                <div class="apresentacao__dados">
-                    <div>
-                        <h1 class="apresentacao__dados__nome" id="nome">Fernando Montanari</h1>
-                        <div class="apresentacao__dados__atuacao">
-                            <h2 class="apresentacao__dados__atuacao_area" id="area-de-atuacao"><strong>Front-end Developer</strong></h2>
-                            <span class="apresentacao__dados__atuacao_icon" id="icon"></span>
-                        </div>
-                    </div>
-                    <div class="apresentacao__dados__texto_sobre" id="texto-sobre">
-                        <p>HTML, CSS e JavaScript.</p>
-                    </div>
-                </div>
-                <div class="apresentacao__links" id="apresentacao-links">
-                    <h2 class="apresentacao__links__titulo_redes" id="titulo-redes">Acesse minhas redes:</h2>
-                    <!-- <a href="#" target="_blank" class="apresentacao__links__portfolio" id="portfolio">Portfolio</a> -->
-                    <a href="https://www.linkedin.com/in/fernandomontanari-/" target="_blank" class="apresentacao__links__linkedin" id="linkedin">LinkedIn</a>
-                    <a href="https://github.com/FernandoMontanari" target="_blank" class="apresentacao__links__github" id="github">GitHub</a>
-                </div>
-            </section>
-        </main>
+    <header class="cabecalho" id="cabecalho">
+        <section class="organiza_menu">
+            <nav class="cabecalho__menu">
+                <ul>
+                    <li class="cabecalho__menu__link"><a href="index.html">Início</a> </li>
+                    <!-- <li class="cabecalho__menu__link"><a href="#">Sobre mim</a></li> -->
+                </ul>
+            </nav>
             <div class="change_theme" id="change_theme">
                 <span class="moon" id="moon"><i class="fa-solid fa-moon"></i></span>
                 <div class="change_theme__toggle" id="toggle">
@@ -42,8 +25,36 @@
                 </div>
                 <span class="sun" id="sun"><i class="fa-solid fa-sun"></i></span>
             </div>
-        <footer>   
-        </footer>
+        </section>
+    </header>
+    <main class="container">
+        <div class="foto_container">
+            <img class="foto_container__foto" src="images/fernando-montanari.png" alt="Foto Fernando Montanari" id="foto">
+        </div>
+        <section class="apresentacao" id="txt-bg">
+            <div class="apresentacao__dados">
+                <div>
+                    <h1 class="apresentacao__dados__nome" id="nome">Fernando Montanari</h1>
+                    <div class="apresentacao__dados__atuacao">
+                        <h2 class="apresentacao__dados__atuacao_area" id="area-de-atuacao"><strong>Front-end Developer</strong></h2>
+                        <span class="apresentacao__dados__atuacao_icon" id="icon"></span>
+                    </div>
+                </div>
+                <div class="apresentacao__dados__texto_sobre" id="texto-sobre">
+                    <p>HTML, CSS e JavaScript.</p>
+                </div>
+            </div>
+            <div class="apresentacao__links" id="apresentacao-links">
+                <h2 class="apresentacao__links__titulo_redes" id="titulo-redes">Acesse minhas redes:</h2>
+                <a href="#" target="_blank" class="apresentacao__links__portfolio" id="portfolio"><i class="fa-solid fa-file-code"></i> Portfolio</a>
+                <a href="https://github.com/FernandoMontanari" target="_blank" class="apresentacao__links__github" id="github"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/fernandomontanari-/" target="_blank" class="apresentacao__links__linkedin" id="linkedin"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape" id="rodape">
+        <p>Desenvolvido por Fernando Montanari.</p>   
+    </footer>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
 const body = document.querySelector('body');
+const cabecalho = document.getElementById('cabecalho');
+const toggle = document.getElementById('toggle');
+const indicator = document.getElementById('indicator');
 const foto = document.getElementById('foto');
 const txtBg = document.getElementById('txt-bg');
 const nome = document.getElementById('nome');
@@ -13,6 +16,8 @@ const github = document.getElementById('github');
 const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
 const changeTheme = document.getElementById('change_theme');
+const rodape = document.getElementById('rodape');
+
 
 function onLoad() {
     setTimeout(() =>  foto.style.opacity = '1' , 500);
@@ -37,8 +42,6 @@ function onLoad() {
 
 setTimeout(onLoad, 500);
 
-const toggle = document.getElementById('toggle');
-const indicator = document.getElementById('indicator');
 toggle.onclick = () => {
     toggle.classList.toggle('active')
     indicator.classList.toggle('active')
@@ -54,4 +57,6 @@ toggle.onclick = () => {
     github.classList.toggle('active')
     sun.classList.toggle('active')
     moon.classList.toggle('active')
+    rodape.classList.toggle('active')
+    cabecalho.classList.toggle('active')
 }
