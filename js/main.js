@@ -17,9 +17,13 @@ const sun = document.getElementById('sun');
 const moon = document.getElementById('moon');
 const changeTheme = document.getElementById('change_theme');
 const rodape = document.getElementById('rodape');
+let theme = sessionStorage.getItem('theme');
 
 
 function onLoad() {
+    if (theme == null) {
+        theme = sessionStorage.setItem('theme', 'dark');
+    }
     setTimeout(() =>  foto.style.opacity = '1' , 500);
     setTimeout(() => {
         txtBg.style.opacity = '1'
@@ -43,6 +47,36 @@ function onLoad() {
 setTimeout(onLoad, 500);
 
 toggle.onclick = () => {
+    toggle.classList.toggle('active')
+    indicator.classList.toggle('active')
+    body.classList.toggle('active')
+    foto.classList.toggle('active')
+    txtBg.classList.toggle('active')
+    areaDeAtuacao.classList.toggle('active')
+    icon.classList.toggle('active')
+    apresentacaoLinks.classList.toggle('active')
+    tituloRedes.classList.toggle('active')
+    portfolio.classList.toggle('active')
+    linkedin.classList.toggle('active')
+    github.classList.toggle('active')
+    sun.classList.toggle('active')
+    moon.classList.toggle('active')
+    rodape.classList.toggle('active')
+    cabecalho.classList.toggle('active')
+    
+    if (theme == 'dark' || theme == '') {
+        theme = 'light'
+        sessionStorage.setItem('theme', 'light');
+        theme = sessionStorage.getItem('theme')
+    } else {
+        theme = 'dark'
+        sessionStorage.setItem('theme', 'dark');
+        theme = sessionStorage.getItem('theme')
+    }
+
+}
+
+if (theme == 'light') {
     toggle.classList.toggle('active')
     indicator.classList.toggle('active')
     body.classList.toggle('active')
