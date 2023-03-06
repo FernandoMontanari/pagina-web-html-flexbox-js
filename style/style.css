@@ -343,6 +343,10 @@ body.active {
     font-size: 1rem;
 }
 
+.foto_container__foto.about {
+    opacity: 1;
+}
+
 /*PÁGINA CURRICULUM*/
 
 .curriculum-container {
@@ -394,6 +398,10 @@ body.active {
     color: var(--cor-secundaria);
     text-decoration: none;
     font-weight: bold;
+}
+
+.foto_container__foto.curriculum {
+    opacity: 1;
 }
 
 
@@ -465,19 +473,22 @@ body.active {
         right: 0;
     }
 
-    .curriculum-container {
+    .curriculum-container, .about-container {
         padding:2% 0;
         align-items: center;
         flex-direction: column-reverse;
     }
     
-    .curriculum-container img {
-        max-width: 80%;
-        margin-left:10px;
+    .curriculum-container img, .about-container img {
+        max-width: 100%;
+        /* margin-left:10px; */
     }
 
     .cabecalho__menu__link a {
         font-size: 0.8rem;
     }
-
+    
+    .apresentacao.about {
+        border-radius: 20px;
+    }
   }
