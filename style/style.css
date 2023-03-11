@@ -533,6 +533,7 @@ body.active {
     
     .apresentacao.about {
         border-radius: 20px;
+        width: 100%;
     }
 
     .apresetacao__texto_sobre {
