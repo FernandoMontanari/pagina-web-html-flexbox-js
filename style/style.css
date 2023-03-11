@@ -422,10 +422,29 @@ body.active {
     opacity: 1;
 }
 
+@media (max-width: 1366px) {
 
+    .foto_container {
+        height: 80%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
 
+    .apresentacao.about {
+        width: 50%;
+    }
 
-@media (max-width: 949px) {
+}
+
+@media (max-width: 1024px) {
+
+    .foto_container {
+        height: auto;
+    }
+
+}
+
+@media (max-width: 760px) {
 
     .foto_container {
         overflow: hidden;
