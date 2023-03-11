@@ -45,6 +45,8 @@ body.active {
     background-color: var(--cor-secundaria);
     width: 100%;
     padding: 10px 0;
+    position: fixed;
+    top:0;
 }
 
 .cabecalho.active {
@@ -99,7 +101,8 @@ body.active {
     max-width: 953px;
     /* max-height: 602px; */
     width: 100%;
-    padding: 5% 0;
+    /* padding: 5% 0; */
+    height: 100vh;
 }
 
 .foto_container__foto, .apresentacao, .apresentacao__dados__nome, .apresentacao__dados__atuacao_area, .apresentacao__dados__atuacao_icon, .apresentacao__dados__texto_sobre,.apresentacao__links {
@@ -320,6 +323,8 @@ body.active {
     width: 100%;
     padding: 20px 0;
     text-align: center;
+    position: fixed;
+    bottom:0;
 }
 
 .rodape.active {
@@ -427,8 +432,14 @@ body.active {
         justify-content: center;
     }
 
+    .cabecalho, .rodape {
+        position: initial;
+    }
+
     .container {
         flex-direction: column;
+        padding: 5% 0;
+        height: 100%;
     }
 
     .foto_container__foto {
