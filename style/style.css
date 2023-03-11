@@ -47,6 +47,7 @@ body.active {
     padding: 10px 0;
     position: fixed;
     top:0;
+    z-index: 999;
 }
 
 .cabecalho.active {
@@ -325,6 +326,7 @@ body.active {
     text-align: center;
     position: fixed;
     bottom:0;
+    z-index: 999;
 }
 
 .rodape.active {
@@ -334,11 +336,12 @@ body.active {
 /*PÁGINA ABOUT*/
 
 .apresentacao.about {
+    box-sizing: border-box;
     opacity: 1;
     margin-left: 0;
     border-radius: 20px 0 0 20px;
     gap: 20px;
-    padding: 2em 2em;
+    padding: 2em 1em;
     text-align: left;
 }
 
@@ -360,8 +363,9 @@ body.active {
 /*PÁGINA CURRICULUM*/
 
 .curriculum-container {
-    padding:2% 0;
+    padding:6% 0;
     align-items: flex-start;
+    height: 100%;
 }
 
 .curriculum-container img {
@@ -376,6 +380,7 @@ body.active {
     gap: 20px;
     padding: 2em 2em;
     text-align: left;
+    box-sizing: border-box;
 }
 
 .apresetacao__titulo {
